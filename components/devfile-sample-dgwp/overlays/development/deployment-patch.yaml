@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dgwp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0073-tenant/tkwch-fix-0075-0073-app/devfile-sample-dgwp@sha256:5fa5363fb60b9e17648a16bd641cfdf0b8ea63e096021e27f967b0770b4f4cb9
+        name: my-nodejs
+        resources: {}
+status: {}
